@@ -159,24 +159,8 @@
     letter-spacing: -0.015em;
   }
 
-  /* the pipeline — the one moment on the page */
-  .pipeline { margin: 2.75rem 0 0; padding: 1.25rem 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
-  .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 0; }
-  .steps li { display: flex; align-items: center; }
-  .steps li:not(:last-child)::after { content: ""; width: clamp(1.5rem, 5vw, 3.5rem); height: 1px; background: var(--line); margin-inline: 0.9rem; }
-  .step-body { display: flex; align-items: center; gap: 0.6rem; }
-  .dot { width: 0.85rem; height: 0.85rem; border-radius: 50%; background: var(--line); flex: none; animation: run 0.9s ease-out both; animation-delay: calc(var(--i) * 0.75s + 0.5s); }
-  .step-name { font-family: var(--mono); font-weight: 500; font-size: 0.95rem; }
-  .step-what { display: block; font-size: 0.8rem; color: var(--muted); line-height: 1.2; }
-  .pipeline figcaption { margin-top: 1rem; font-size: 0.9rem; color: var(--muted); }
-  @keyframes run {
-    0% { background: var(--line); transform: scale(1); }
-    45% { background: var(--warn); transform: scale(1.4); }
-    100% { background: var(--accent); transform: scale(1); }
-  }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .dot { animation: none; background: var(--accent); }
   }
 
   .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
@@ -261,16 +245,6 @@
     </div>
     <p class="role">Computer Science &amp; Engineering undergraduate specializing in Cyber Security at the University of Moratuwa, Sri Lanka</p>
     <p class="tagline">I don’t stop at “it works” — I stop at knowing why it works, and how it breaks.</p>
-
-    <figure class="pipeline">
-      <ol class="steps" aria-label="Delivery pipeline: tests, image scan, publish, deploy. All stages passing.">
-        <li style="--i:0"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">pytest</span><span class="step-what">run tests</span></span></span></li>
-        <li style="--i:1"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">trivy</span><span class="step-what">scan image</span></span></span></li>
-        <li style="--i:2"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">ghcr</span><span class="step-what">publish image</span></span></span></li>
-        <li style="--i:3"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">render</span><span class="step-what">deploy</span></span></span></li>
-      </ol>
-      <figcaption>The pipeline I built for my HR Interview Automation System. It runs on every build.</figcaption>
-    </figure>
 
     <div class="links">
       <a class="btn primary" href="https://github.com/ChethanaGimhan">GitHub</a>
