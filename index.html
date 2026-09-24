@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Chethana Gimhan — Cyber Security &amp; DevOps | University of Moratuwa</title>
-<meta name="description" content="Chethana Gimhan is a Computer Science &amp; Engineering undergraduate at the University of Moratuwa specializing in Cyber Security, DevOps and platform engineering. Projects, stack and contact.">
+<meta name="description" content="Chethana Gimhan is a Computer Science &amp; Engineering undergraduate at the University of Moratuwa specializing in Cyber Security. Projects, stack and contact.">
 <meta name="author" content="Chethana Gimhan">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://chethanagimhan.github.io/">
@@ -32,7 +32,7 @@
 <meta property="profile:username" content="ChethanaGimhan">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chethana Gimhan — Cyber Security &amp; DevOps">
-<meta name="twitter:description" content="CSE undergraduate at the University of Moratuwa specializing in Cyber Security and DevOps.">
+<meta name="twitter:description" content="CSE undergraduate at the University of Moratuwa specializing in Cyber Security.">
 <meta name="twitter:image" content="https://github.com/ChethanaGimhan.png?size=460">
 
 <script type="application/ld+json">
@@ -47,7 +47,7 @@
     "url": "https://chethanagimhan.github.io/",
     "image": "https://github.com/ChethanaGimhan.png?size=460",
     "jobTitle": "Computer Science & Engineering Undergraduate",
-    "description": "Computer Science & Engineering undergraduate at the University of Moratuwa specializing in Cyber Security, with a focus on DevOps and platform engineering.",
+    "description": "Computer Science & Engineering undergraduate at the University of Moratuwa specializing in Cyber Security.",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "University of Moratuwa",
@@ -58,7 +58,6 @@
       "Penetration Testing",
       "Application Security",
       "DevOps",
-      "Platform Engineering",
       "Docker",
       "Kubernetes",
       "CI/CD",
@@ -245,7 +244,7 @@
     <a class="mark" href="#top">Chethana Gimhan</a>
     <nav aria-label="Primary">
       <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
       <a href="#stack">Stack</a>
       <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
@@ -260,7 +259,7 @@
       <img class="avatar" src="https://github.com/ChethanaGimhan.png?size=240" width="96" height="96" alt="Chethana Gimhan">
       <h1>Chethana Gimhan</h1>
     </div>
-    <p class="role">Cyber Security &amp; DevOps undergraduate at the University of Moratuwa, Sri Lanka</p>
+    <p class="role">Computer Science &amp; Engineering undergraduate specializing in Cyber Security at the University of Moratuwa, Sri Lanka</p>
     <p class="tagline">I don’t stop at “it works” — I stop at knowing why it works, and how it breaks.</p>
 
     <figure class="pipeline">
@@ -285,16 +284,15 @@
     <div class="wrap">
       <h2>About</h2>
       <div class="prose">
-        <p>I’m a third-year Computer Science &amp; Engineering undergraduate at the <a href="https://uom.lk/">University of Moratuwa</a>, specializing in Cyber Security.</p>
-        <p>I build and deploy containerized DevOps pipelines, design databases, and work on database forensics. What pulls me toward security is the same habit that shapes my projects: understanding a system well enough to know where it fails. I’m especially interested in penetration testing, application security, and secure system design.</p>
-        <p>Away from the keyboard I’m a 400m hurdler and the vice-captain of the university’s men’s athletic team.</p>
+        <p>I’m a third-year Computer Science &amp; Engineering undergraduate at the <a href="https://uom.lk/">University of Moratuwa</a>, specializing in Cyber Security. I build and deploy containerized DevOps pipelines, design databases, and work on database forensics — and I’m drawn to the security side of all of it: penetration testing, application security, and secure system design.</p>
+        <p>Outside of coursework, I’m President of the Mora Athletics Society and vice-captain of the university men’s athletic team, competing as a 400m hurdler.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="work">
+  <section class="section" id="projects">
     <div class="wrap">
-      <h2>Selected work</h2>
+      <h2>Projects</h2>
 
       <article class="work">
         <div>
@@ -308,7 +306,29 @@
             <li>Bridged CI to GitOps through repository dispatch, auto-updating Kubernetes manifests for ArgoCD.</li>
           </ul>
           <p class="tech">Docker · GitHub Actions · GHCR · Kubernetes · ArgoCD</p>
-          <div class="work-links"><a href="https://github.com/AgriSenseNet">Source on GitHub</a></div>
+          <div class="work-links">
+            <a href="https://github.com/AgriSenseNet">Source on GitHub</a>
+            <a href="https://chethanagimhan.cse23.org/projects/agrisensenet">Case study</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>Kandypack — Rail &amp; Road Supply Chain Distribution System</h3>
+          <p class="work-meta">Database Systems group project, 2025</p>
+        </div>
+        <div>
+          <ul>
+            <li>Designed the relational schema and ERD for a <strong>15+ entity</strong> logistics platform covering orders, train and truck trips, shipments, and worker rosters.</li>
+            <li>Enforced business rules such as driver working-hour limits and train-capacity overflow through triggers, stored procedures, and views.</li>
+            <li>Built backend API endpoints on Elysia.js (Bun runtime) with JWT authentication, and implemented the Store Manager Dashboard in Next.js.</li>
+          </ul>
+          <p class="tech">PostgreSQL · Elysia.js · Bun · Next.js · TypeScript · Docker</p>
+          <div class="work-links">
+            <a href="https://github.com/sahithyandev/kandypack-system">Source on GitHub</a>
+            <a href="https://chethanagimhan.cse23.org/projects/kandypack">Case study</a>
+          </div>
         </div>
       </article>
 
@@ -326,7 +346,8 @@
           <p class="tech">FastAPI · PostgreSQL · Docker · GitHub Actions · Trivy · GHCR · Render</p>
           <div class="work-links">
             <a href="https://github.com/ChethanaGimhan/hr-interview-system">Source on GitHub</a>
-            <a href="https://hr-interview-system-1.onrender.com">Live deployment</a>
+            <a href="https://chethanagimhan.cse23.org/projects/hr-interview-system">Case study</a>
+            <a href="https://hr-interview-frontend.onrender.com">Live deployment</a>
           </div>
         </div>
       </article>
@@ -343,23 +364,10 @@
             <li>Designed the SQLite persistence layer — schemas, physical records, binlog events, and utility-execution provenance — with normalized test fixtures validating each adapter.</li>
           </ul>
           <p class="tech">Python · SQLite · MySQL InnoDB internals · Binary log analysis · Digital forensics</p>
-          <div class="work-links"><a href="https://github.com/Factum-Labs">Source on GitHub</a></div>
-        </div>
-      </article>
-
-      <article class="work">
-        <div>
-          <h3>Kandypack — Rail &amp; Road Supply Chain Distribution System</h3>
-          <p class="work-meta">Database Systems group project, 2025</p>
-        </div>
-        <div>
-          <ul>
-            <li>Designed the relational schema and ERD for a <strong>15+ entity</strong> logistics platform covering orders, train and truck trips, shipments, and worker rosters.</li>
-            <li>Enforced business rules such as driver working-hour limits and train-capacity overflow through triggers, stored procedures, and views.</li>
-            <li>Built backend API endpoints on Elysia.js (Bun runtime) with JWT authentication, and implemented the Store Manager Dashboard in Next.js.</li>
-          </ul>
-          <p class="tech">PostgreSQL · Elysia.js · Bun · Next.js · TypeScript · Docker</p>
-          <div class="work-links"><a href="https://github.com/sahithyandev/kandypack-system">Source on GitHub</a></div>
+          <div class="work-links">
+            <a href="https://github.com/Factum-Labs">Source on GitHub</a>
+            <a href="https://chethanagimhan.cse23.org/projects/factumdb">Case study</a>
+          </div>
         </div>
       </article>
 
@@ -375,7 +383,44 @@
             <li>Added a 7-segment display driver for on-board FPGA output.</li>
           </ul>
           <p class="tech">VHDL · Xilinx Vivado · Basys 3 FPGA</p>
-          <div class="work-links"><a href="https://github.com/ChethanaGimhan/nano-processor">Source on GitHub</a></div>
+          <div class="work-links">
+            <a href="https://github.com/ChethanaGimhan/nano-processor">Source on GitHub</a>
+            <a href="https://chethanagimhan.cse23.org/projects/nano-processor">Case study</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>RouteX — Bus Tracking App</h3>
+          <p class="work-meta">SLIoT Competition group project</p>
+        </div>
+        <div>
+          <ul>
+            <li>Helped build a cross-platform Flutter app with real-time GPS bus tracking wired up through Firebase.</li>
+            <li>The app takes commuters from bus search through booking, with profile management and an animated, responsive UI.</li>
+          </ul>
+          <p class="tech">Flutter · Firebase</p>
+          <div class="work-links">
+            <a href="https://chethanagimhan.cse23.org/projects/routex-bus-tracking">Case study</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>Security Testing — OWASP Mutillidae II</h3>
+          <p class="work-meta">Hands-on offensive security practice</p>
+        </div>
+        <div>
+          <ul>
+            <li>Used Burp Suite as an intercepting proxy to capture and manipulate HTTP requests against OWASP Mutillidae II, an intentionally vulnerable web application.</li>
+            <li>Crafted and executed SQL injection payloads to extract data the application wasn’t meant to expose.</li>
+          </ul>
+          <p class="tech">Burp Suite · OWASP Mutillidae II · SQL injection</p>
+          <div class="work-links">
+            <a href="https://chethanagimhan.cse23.org/projects/security-testing-mutillidae">Case study</a>
+          </div>
         </div>
       </article>
     </div>
@@ -385,12 +430,12 @@
     <div class="wrap">
       <h2>Tech stack</h2>
       <dl class="stack">
-        <div class="stack-row"><dt>Languages</dt><dd>Python, C++, Java, TypeScript, SQL, VHDL</dd></div>
+        <div class="stack-row"><dt>Languages</dt><dd>Python, C/C++, Java, JavaScript, TypeScript, SQL, VHDL</dd></div>
         <div class="stack-row"><dt>Backend</dt><dd>FastAPI, Node.js</dd></div>
-        <div class="stack-row"><dt>Frontend</dt><dd>React, Next.js, Flutter, HTML, Tailwind CSS</dd></div>
+        <div class="stack-row"><dt>Frontend</dt><dd>React.js, Next.js, Flutter, HTML, Tailwind CSS</dd></div>
         <div class="stack-row"><dt>Databases</dt><dd>PostgreSQL, MySQL, ER modeling, schema design and normalization</dd></div>
         <div class="stack-row"><dt>DevOps &amp; cloud</dt><dd>Docker, Git, GitHub Actions, GHCR, ArgoCD, Kubernetes, Terraform</dd></div>
-        <div class="stack-row"><dt>Systems &amp; security</dt><dd>Linux, Trivy, networking, VHDL/FPGA design</dd></div>
+        <div class="stack-row"><dt>Systems &amp; other</dt><dd>Linux, Trivy, networking, VHDL/FPGA design</dd></div>
       </dl>
     </div>
   </section>
@@ -423,7 +468,7 @@
   <section class="section" id="contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <p class="prose">Email is the fastest way to reach me. My code is on GitHub, and my longer project write-ups are on my portfolio.</p>
+      <p class="prose">Have a project in mind, or just want to talk security and DevOps? My inbox is open.</p>
       <p><a class="email" href="mailto:chethanag.23@cse.mrt.ac.lk">chethanag.23@cse.mrt.ac.lk</a></p>
       <div class="links">
         <a class="btn" href="https://github.com/ChethanaGimhan">github.com/ChethanaGimhan</a>
