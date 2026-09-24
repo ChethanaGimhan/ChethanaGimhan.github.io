@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Chethana Gimhan — Cyber Security &amp; DevOps | University of Moratuwa</title>
+<meta name="description" content="Chethana Gimhan is a Computer Science &amp; Engineering undergraduate at the University of Moratuwa specializing in Cyber Security, DevOps and platform engineering. Projects, stack and contact.">
+<meta name="author" content="Chethana Gimhan">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://chethanagimhan.github.io/">
+<meta name="theme-color" content="#0B7A75">
+
+<!--
+  GOOGLE SEARCH CONSOLE VERIFICATION
+  1. In Search Console, add the property https://chethanagimhan.github.io/ (URL-prefix type).
+  2. Choose "HTML tag" verification and copy the content value Google gives you.
+  3. Replace PASTE_TOKEN_HERE below, remove the comment markers around the tag, commit, then click Verify.
+-->
+<!-- <meta name="google-site-verification" content="PASTE_TOKEN_HERE"> -->
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Chethana Gimhan">
+<meta property="og:title" content="Chethana Gimhan — Cyber Security &amp; DevOps">
+<meta property="og:description" content="CSE undergraduate at the University of Moratuwa specializing in Cyber Security. Containerized DevOps pipelines, database forensics and secure system design.">
+<meta property="og:url" content="https://chethanagimhan.github.io/">
+<meta property="og:image" content="https://github.com/ChethanaGimhan.png?size=460">
+<meta property="og:image:alt" content="Chethana Gimhan">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Chethana">
+<meta property="profile:last_name" content="Gimhan">
+<meta property="profile:username" content="ChethanaGimhan">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chethana Gimhan — Cyber Security &amp; DevOps">
+<meta name="twitter:description" content="CSE undergraduate at the University of Moratuwa specializing in Cyber Security and DevOps.">
+<meta name="twitter:image" content="https://github.com/ChethanaGimhan.png?size=460">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Chethana Gimhan",
+    "givenName": "Chethana",
+    "familyName": "Gimhan",
+    "url": "https://chethanagimhan.github.io/",
+    "image": "https://github.com/ChethanaGimhan.png?size=460",
+    "jobTitle": "Computer Science & Engineering Undergraduate",
+    "description": "Computer Science & Engineering undergraduate at the University of Moratuwa specializing in Cyber Security, with a focus on DevOps and platform engineering.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Moratuwa",
+      "url": "https://uom.lk/"
+    },
+    "knowsAbout": [
+      "Cyber Security",
+      "Penetration Testing",
+      "Application Security",
+      "DevOps",
+      "Platform Engineering",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Database Forensics"
+    ],
+    "sameAs": [
+      "https://github.com/ChethanaGimhan",
+      "https://www.linkedin.com/in/chethanagimhan",
+      "https://chethanagimhan.cse23.org"
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F5F7F8;
+    --panel: #FFFFFF;
+    --ink: #0F1B2D;
+    --muted: #4A5866;
+    --line: #D5DCE2;
+    --accent: #0B7A75;
+    --accent-ink: #065A56;
+    --warn: #B45309;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0D1620;
+      --panel: #131F2C;
+      --ink: #E7EEF4;
+      --muted: #9AA9B7;
+      --line: #243342;
+      --accent: #3CC8BE;
+      --accent-ink: #7EE3DA;
+      --warn: #F59E0B;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--accent-ink); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .wrap { width: min(1040px, 100% - 2.5rem); margin-inline: auto; }
+  .skip {
+    position: absolute; left: 1rem; top: -4rem;
+    background: var(--ink); color: var(--paper);
+    padding: 0.6rem 1rem; z-index: 10; text-decoration: none;
+  }
+  .skip:focus { top: 1rem; }
+
+  /* top bar */
+  .top { border-bottom: 1px solid var(--line); }
+  .bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem 1.5rem; padding-block: 1rem; }
+  .mark { font-family: var(--display); font-weight: 700; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+  .bar nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
+  .bar nav a { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+  .bar nav a:hover { color: var(--ink); text-decoration: underline; }
+
+  /* hero */
+  .hero { padding-block: 4.5rem 3.5rem; }
+  .identity { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .avatar { width: 96px; height: 96px; border-radius: 50%; border: 2px solid var(--line); background: var(--panel); }
+  h1 {
+    margin: 0;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .role { margin: 1.25rem 0 0; font-size: 1.15rem; color: var(--muted); font-weight: 500; }
+  .tagline {
+    margin: 1.75rem 0 0;
+    max-width: 30ch;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  /* the pipeline — the one moment on the page */
+  .pipeline { margin: 2.75rem 0 0; padding: 1.25rem 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 0; }
+  .steps li { display: flex; align-items: center; }
+  .steps li:not(:last-child)::after { content: ""; width: clamp(1.5rem, 5vw, 3.5rem); height: 1px; background: var(--line); margin-inline: 0.9rem; }
+  .step-body { display: flex; align-items: center; gap: 0.6rem; }
+  .dot { width: 0.85rem; height: 0.85rem; border-radius: 50%; background: var(--line); flex: none; animation: run 0.9s ease-out both; animation-delay: calc(var(--i) * 0.75s + 0.5s); }
+  .step-name { font-family: var(--mono); font-weight: 500; font-size: 0.95rem; }
+  .step-what { display: block; font-size: 0.8rem; color: var(--muted); line-height: 1.2; }
+  .pipeline figcaption { margin-top: 1rem; font-size: 0.9rem; color: var(--muted); }
+  @keyframes run {
+    0% { background: var(--line); transform: scale(1); }
+    45% { background: var(--warn); transform: scale(1.4); }
+    100% { background: var(--accent); transform: scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .dot { animation: none; background: var(--accent); }
+  }
+
+  .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
+  .btn {
+    display: inline-block; padding: 0.65rem 1.15rem;
+    border: 1.5px solid var(--ink); border-radius: 4px;
+    color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+  }
+  .btn:hover { background: var(--ink); color: var(--paper); }
+  .btn.primary { background: var(--ink); color: var(--paper); }
+  .btn.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: var(--paper); }
+
+  /* sections */
+  .section { padding-block: 4rem; border-top: 1px solid var(--line); }
+  h2 { margin: 0 0 2rem; font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: -0.02em; line-height: 1.1; }
+  h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; line-height: 1.2; }
+  .prose { max-width: 62ch; }
+  .prose p { margin: 0 0 1.1rem; }
+
+  /* projects */
+  .work { display: grid; gap: 1rem 3rem; padding-block: 2rem; border-top: 1px solid var(--line); }
+  .work:first-of-type { border-top: 0; padding-top: 0; }
+  .work-meta { margin: 0.4rem 0 0; font-size: 0.9rem; color: var(--muted); }
+  .status { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.5rem; border: 1px solid var(--warn); color: var(--warn); border-radius: 999px; font-size: 0.75rem; font-weight: 600; vertical-align: middle; }
+  .work ul { margin: 0 0 1rem; padding-left: 1.15rem; max-width: 64ch; }
+  .work li { margin-bottom: 0.5rem; }
+  .tech { margin: 0 0 0.9rem; font-family: var(--mono); font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+  .work-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; font-weight: 600; font-size: 0.95rem; }
+  @media (min-width: 800px) {
+    .work { grid-template-columns: 15rem 1fr; }
+  }
+
+  /* stack */
+  .stack { margin: 0; display: grid; gap: 0; }
+  .stack-row { display: grid; gap: 0.25rem 2rem; padding-block: 1rem; border-top: 1px solid var(--line); }
+  .stack-row:first-child { border-top: 0; padding-top: 0; }
+  .stack dt { font-weight: 600; }
+  .stack dd { margin: 0; color: var(--muted); }
+  @media (min-width: 700px) {
+    .stack-row { grid-template-columns: 12rem 1fr; }
+  }
+
+  /* credentials */
+  .cols { display: grid; gap: 2.5rem; }
+  @media (min-width: 800px) { .cols { grid-template-columns: 1fr 1fr; } }
+  .plain { list-style: none; margin: 0; padding: 0; }
+  .plain li { padding-block: 0.85rem; border-top: 1px solid var(--line); }
+  .plain li:first-child { border-top: 0; padding-top: 0; }
+  .plain span { display: block; font-size: 0.9rem; color: var(--muted); }
+  h3.sub { font-size: 1.1rem; margin-bottom: 1rem; }
+
+  /* contact */
+  .email { font-family: var(--display); font-weight: 700; font-size: clamp(1.3rem, 4.5vw, 2.2rem); letter-spacing: -0.02em; word-break: break-word; }
+
+  footer { padding-block: 2.5rem 3.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 2rem; }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="mark" href="#top">Chethana Gimhan</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap" id="top">
+    <div class="identity">
+      <img class="avatar" src="https://github.com/ChethanaGimhan.png?size=240" width="96" height="96" alt="Chethana Gimhan">
+      <h1>Chethana Gimhan</h1>
+    </div>
+    <p class="role">Cyber Security &amp; DevOps undergraduate at the University of Moratuwa, Sri Lanka</p>
+    <p class="tagline">I don’t stop at “it works” — I stop at knowing why it works, and how it breaks.</p>
+
+    <figure class="pipeline">
+      <ol class="steps" aria-label="Delivery pipeline: tests, image scan, publish, deploy. All stages passing.">
+        <li style="--i:0"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">pytest</span><span class="step-what">run tests</span></span></span></li>
+        <li style="--i:1"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">trivy</span><span class="step-what">scan image</span></span></span></li>
+        <li style="--i:2"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">ghcr</span><span class="step-what">publish image</span></span></span></li>
+        <li style="--i:3"><span class="step-body"><span class="dot" aria-hidden="true"></span><span><span class="step-name">render</span><span class="step-what">deploy</span></span></span></li>
+      </ol>
+      <figcaption>The pipeline I built for my HR Interview Automation System. It runs on every build.</figcaption>
+    </figure>
+
+    <div class="links">
+      <a class="btn primary" href="https://github.com/ChethanaGimhan">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/chethanagimhan">LinkedIn</a>
+      <a class="btn" href="mailto:chethanag.23@cse.mrt.ac.lk">Email</a>
+      <a class="btn" href="https://chethanagimhan.cse23.org">Project case studies</a>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div class="prose">
+        <p>I’m a third-year Computer Science &amp; Engineering undergraduate at the <a href="https://uom.lk/">University of Moratuwa</a>, specializing in Cyber Security.</p>
+        <p>I build and deploy containerized DevOps pipelines, design databases, and work on database forensics. What pulls me toward security is the same habit that shapes my projects: understanding a system well enough to know where it fails. I’m especially interested in penetration testing, application security, and secure system design.</p>
+        <p>Away from the keyboard I’m a 400m hurdler and the vice-captain of the university’s men’s athletic team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <h2>Selected work</h2>
+
+      <article class="work">
+        <div>
+          <h3>AgriSenseNet — CropWise Smart Agriculture Platform</h3>
+          <p class="work-meta">Large-Scale Software Engineering group project, 2026</p>
+        </div>
+        <div>
+          <ul>
+            <li>Containerized <strong>14 microservices</strong> — FastAPI backend, React dashboard, MQTT–Kafka bridge, Spark, and 6 ML inference services — authoring <strong>27 Dockerfiles</strong> with multi-stage builds.</li>
+            <li>Built GitHub Actions CI with Buildx layer caching and SHA-tagged images published to GHCR.</li>
+            <li>Bridged CI to GitOps through repository dispatch, auto-updating Kubernetes manifests for ArgoCD.</li>
+          </ul>
+          <p class="tech">Docker · GitHub Actions · GHCR · Kubernetes · ArgoCD</p>
+          <div class="work-links"><a href="https://github.com/AgriSenseNet">Source on GitHub</a></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>HR Interview Automation System <span class="status">ongoing</span></h3>
+          <p class="work-meta">Independent project, 2026</p>
+        </div>
+        <div>
+          <ul>
+            <li>Built a FastAPI and PostgreSQL backend with Pydantic validation, API-key authentication, rate limiting, and structured logging.</li>
+            <li>Containerized with multi-stage Docker builds.</li>
+            <li>Owned the whole delivery pipeline: GitHub Actions CI running <strong>pytest</strong> and <strong>Trivy</strong> image scans on every build, versioned images published to GHCR, and a live deployment on Render.</li>
+          </ul>
+          <p class="tech">FastAPI · PostgreSQL · Docker · GitHub Actions · Trivy · GHCR · Render</p>
+          <div class="work-links">
+            <a href="https://github.com/ChethanaGimhan/hr-interview-system">Source on GitHub</a>
+            <a href="https://hr-interview-system-1.onrender.com">Live deployment</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>FactumDB — MySQL Forensic Correlation Tool <span class="status">ongoing</span></h3>
+          <p class="work-meta">Semester 5 Cyber Security group project, 2026</p>
+        </div>
+        <div>
+          <ul>
+            <li>Building a digital forensics tool that correlates MySQL InnoDB tablespace files with binary logs to reconstruct database transaction history.</li>
+            <li>Built the utility adapter layer (<em>ibd2sdi, innochecksum, ibd2sql, mysqlbinlog</em>) that parses raw forensic tool output into canonical models, with positional-field-to-schema mapping and table-level filtering for multi-table binary logs.</li>
+            <li>Designed the SQLite persistence layer — schemas, physical records, binlog events, and utility-execution provenance — with normalized test fixtures validating each adapter.</li>
+          </ul>
+          <p class="tech">Python · SQLite · MySQL InnoDB internals · Binary log analysis · Digital forensics</p>
+          <div class="work-links"><a href="https://github.com/Factum-Labs">Source on GitHub</a></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>Kandypack — Rail &amp; Road Supply Chain Distribution System</h3>
+          <p class="work-meta">Database Systems group project, 2025</p>
+        </div>
+        <div>
+          <ul>
+            <li>Designed the relational schema and ERD for a <strong>15+ entity</strong> logistics platform covering orders, train and truck trips, shipments, and worker rosters.</li>
+            <li>Enforced business rules such as driver working-hour limits and train-capacity overflow through triggers, stored procedures, and views.</li>
+            <li>Built backend API endpoints on Elysia.js (Bun runtime) with JWT authentication, and implemented the Store Manager Dashboard in Next.js.</li>
+          </ul>
+          <p class="tech">PostgreSQL · Elysia.js · Bun · Next.js · TypeScript · Docker</p>
+          <div class="work-links"><a href="https://github.com/sahithyandev/kandypack-system">Source on GitHub</a></div>
+        </div>
+      </article>
+
+      <article class="work">
+        <div>
+          <h3>Nano Processor</h3>
+          <p class="work-meta">Hardware design project, 2025</p>
+        </div>
+        <div>
+          <ul>
+            <li>Designed and implemented a custom <strong>8-register processor from scratch</strong>, extending a 4-bit base core into a 5-bit datapath with a dedicated ALU and hardware multiplier.</li>
+            <li>Built the instruction decoder for a 13-bit instruction set supporting immediate load, negation, conditional register-compare jumps, and ALU operations.</li>
+            <li>Added a 7-segment display driver for on-board FPGA output.</li>
+          </ul>
+          <p class="tech">VHDL · Xilinx Vivado · Basys 3 FPGA</p>
+          <div class="work-links"><a href="https://github.com/ChethanaGimhan/nano-processor">Source on GitHub</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <div class="wrap">
+      <h2>Tech stack</h2>
+      <dl class="stack">
+        <div class="stack-row"><dt>Languages</dt><dd>Python, C++, Java, TypeScript, SQL, VHDL</dd></div>
+        <div class="stack-row"><dt>Backend</dt><dd>FastAPI, Node.js</dd></div>
+        <div class="stack-row"><dt>Frontend</dt><dd>React, Next.js, Flutter, HTML, Tailwind CSS</dd></div>
+        <div class="stack-row"><dt>Databases</dt><dd>PostgreSQL, MySQL, ER modeling, schema design and normalization</dd></div>
+        <div class="stack-row"><dt>DevOps &amp; cloud</dt><dd>Docker, Git, GitHub Actions, GHCR, ArgoCD, Kubernetes, Terraform</dd></div>
+        <div class="stack-row"><dt>Systems &amp; security</dt><dd>Linux, Trivy, networking, VHDL/FPGA design</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="credentials">
+    <div class="wrap">
+      <h2>Credentials &amp; leadership</h2>
+      <div class="cols">
+        <div>
+          <h3 class="sub">Certifications and achievements</h3>
+          <ul class="plain">
+            <li>AWS Academy Graduate — Cloud Foundations<span>February 2026</span></li>
+            <li>AWS Academy Graduate — Microservices and CI/CD Pipeline Builder<span>February 2026</span></li>
+            <li>Semi-Finalist, SLIoT Challenge 2025 (Open Category)<span>SLT Mobitel · IESL · Dept. of CSE, University of Moratuwa</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Leadership</h3>
+          <ul class="plain">
+            <li>Vice-captain, Men’s Athletic Team, University of Moratuwa<span>September 2025 – present</span></li>
+            <li>President, Mora Athletics Society<span>January 2026 – present</span></li>
+            <li>Events Committee Co-lead, IEEE CIS Chapter, University of Moratuwa<span>April 2026 – present</span></li>
+            <li>Student Member, Institution of Engineers Sri Lanka (IESL)<span>March 2025 – present</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="prose">Email is the fastest way to reach me. My code is on GitHub, and my longer project write-ups are on my portfolio.</p>
+      <p><a class="email" href="mailto:chethanag.23@cse.mrt.ac.lk">chethanag.23@cse.mrt.ac.lk</a></p>
+      <div class="links">
+        <a class="btn" href="https://github.com/ChethanaGimhan">github.com/ChethanaGimhan</a>
+        <a class="btn" href="https://www.linkedin.com/in/chethanagimhan">LinkedIn</a>
+        <a class="btn" href="https://chethanagimhan.cse23.org">chethanagimhan.cse23.org</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Chethana Gimhan · Sri Lanka</span>
+    <a href="https://github.com/ChethanaGimhan/ChethanaGimhan.github.io">Source of this page</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chethanagimhan.github.io/sitemap.xml
